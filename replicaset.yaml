@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: timeo
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      servicename: timeo
+
+  template:
+    metadata:
+      labels:
+        servicename: timeo
+    spec:
+      containers:
+        - image: timeo:latest
+          name: timeo
+          imagePullPolicy: Never
