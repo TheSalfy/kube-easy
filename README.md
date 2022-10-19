@@ -15,3 +15,6 @@ sudo k3s kubectl get po
 sudo k3s kubectl get rs
 sudo k3s kubectl apply -f replicaset.yaml
 ```
+
+# Pour mettre à jour le nombre de replicas de timeo
+sudo k3s kubectl scale --replicas 20 rs timeo
