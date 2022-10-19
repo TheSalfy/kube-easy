@@ -1,0 +1,6 @@
+docker build -t timeo .
+docker run --rm -p 5000:5000 timeo
+curl 127.1:8000
+
+sudo k3s kubectl apply -f pod.yaml
+sudo k3s kubectl get po
