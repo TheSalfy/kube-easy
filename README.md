@@ -2,6 +2,13 @@ sudo docker build -t timeo .
 sudo docker run --rm -p 5000:5000 timeo
 curl 127.1:5000
 
+# BeforeHand
+Add the following alias in `~/.bashrc` to save time.
+
+```
+alias k='sudo k3s kubectl'
+```
+
 # Création d'un Pod
 
 ```
