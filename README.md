@@ -35,3 +35,10 @@ sudo k3s kubectl scale --replicas 20 rs timeo
 sudo k3s kubectl apply -f service.yaml
 sudo k3s kubectl get service
 ```
+
+# Création d'un Ingress
+
+```
+sudo k3s kubectl apply -f ingress.yaml
+sudo k3s kubectl get ing
+```
