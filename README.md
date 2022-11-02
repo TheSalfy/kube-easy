@@ -42,3 +42,9 @@ sudo k3s kubectl get service
 sudo k3s kubectl apply -f ingress.yaml
 sudo k3s kubectl get ing
 ```
+
+# Ecriture d'un Chart
+
+```
+helm template my-timeo1 . | less
+```

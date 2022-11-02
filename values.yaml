@@ -1,0 +1,4 @@
+image:
+  repo: timeo
+  tag: latest
+  pullPolicy: Never

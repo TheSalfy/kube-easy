@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: timeo
+spec:
+  replicas: 10
+  selector:
+    matchlabels:
+      servicename: timeo
+    template:
+      metadata:
+        labels:
+          servicename: timeo
+      spec:
+        containers:
+          - image: timeo:latest
+            name: timeo
+            imagePullPolicy: Never
